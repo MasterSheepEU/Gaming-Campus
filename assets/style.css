@@ -22,9 +22,10 @@ nav {
 nav ul {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 0.8rem;
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 100px;
+  margin: 20px 60px;
 }
 nav ul li {
   cursor: pointer;
@@ -35,8 +36,9 @@ header {
   text-align: center;
   background: url(../assets/img/bg.jpg) center/cover;
 }
-header #logo {
-  margin-top: 50px;
+header .logo-campus {
+  margin-top: 25px;
+  width: 40%;
 }
 header h1 {
   color: rgb(250, 250, 250);
@@ -126,7 +128,7 @@ button {
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
-  margin-left: 13%;
+  margin-left: 10%;
 }
 .header-news .right-part {
   width: 35%;
@@ -269,9 +271,110 @@ footer h3 {
 footer ul {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 120px;
+  margin: 0 40px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  header .logo-campus {
+    width: 70%;
+  }
+  .icon-part-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-icon-part {
+    width: 50%;
+  }
+  .list-icon-part button {
+    width: 60%;
+  }
+  .header-news {
+    flex-direction: column;
+  }
+  .header-news .left-part {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .header-news .right-part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-news-container .mn-pic {
+    align-items: center;
+  }
+  .main-news-container div {
+    width: 80%;
+  }
+  .main-news-container h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .main-news-container p {
+    width: 100%;
+    text-align: center;
+  }
+  .main-news-container .link {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .list {
+    width: 100%;
+    text-align: center;
+  }
+  .infos-p {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .list:nth-of-type(1) {
+    display: none;
+  }
+  .contact .contact-list {
+    height: 100%;
+    flex-direction: column;
+  }
+  .list:nth-of-type(3) a {
+    margin-bottom: 60px;
+  }
+  .list:nth-of-type(3) p {
+    margin: 0 70px;
+  }
+  .contact-medias {
+    flex-direction: column;
+  }
+  .contact-medias .medias-text {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .contact-medias .medias-logos {
+    margin-top: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
