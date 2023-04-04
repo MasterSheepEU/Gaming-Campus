@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 * {
   margin: 0;
@@ -15,6 +16,7 @@ body {
   flex-direction: column;
 }
 
+/* ------------------------------------Barre de navigation------------------------------------ */
 nav {
   width: 100%;
   background: rgb(250, 250, 250);
@@ -31,6 +33,7 @@ nav ul li {
   cursor: pointer;
 }
 
+/* ------------------------------------Header------------------------------------ */
 header {
   width: 100%;
   text-align: center;
@@ -71,6 +74,7 @@ button {
   margin-bottom: 50px;
 }
 
+/* ------------------------------------Présentation du campus------------------------------------ */
 .icon-part {
   width: 100%;
 }
@@ -111,6 +115,7 @@ button {
   margin: 0;
 }
 
+/* ------------------------------------News du campus------------------------------------ */
 .news-part {
   display: flex;
   flex-direction: column;
@@ -174,6 +179,7 @@ button {
   color: rgb(146, 0, 251);
 }
 
+/* ------------------------------------Contact------------------------------------ */
 .contact {
   width: 100%;
   background: rgb(250, 250, 250);
@@ -256,6 +262,7 @@ button {
   align-items: center;
 }
 
+/* ------------------------------------Footer------------------------------------ */
 footer {
   background: rgb(5, 5, 5);
   display: flex;
@@ -277,6 +284,7 @@ footer ul {
 }
 
 @media screen and (max-width: 900px) {
+  /* ------------------------------------Barre de navigation------------------------------------ */
   nav ul {
     width: 50%;
     flex-wrap: wrap;
@@ -284,6 +292,7 @@ footer ul {
     row-gap: 10px;
     column-gap: 10px;
   }
+  /* ------------------------------------Header------------------------------------ */
   header .logo-campus {
     width: 70%;
   }
@@ -297,6 +306,7 @@ footer ul {
   .list-icon-part button {
     width: 60%;
   }
+  /* ------------------------------------News du campus------------------------------------ */
   .header-news {
     flex-direction: column;
   }
@@ -333,6 +343,11 @@ footer ul {
     text-align: center;
     margin-bottom: 20px;
   }
+  /* ------------------------------------Contact------------------------------------ */
+  .contact .contact-list {
+    height: 100%;
+    flex-direction: column;
+  }
   .list {
     width: 100%;
     text-align: center;
@@ -344,10 +359,6 @@ footer ul {
   }
   .list:nth-of-type(1) {
     display: none;
-  }
-  .contact .contact-list {
-    height: 100%;
-    flex-direction: column;
   }
   .list:nth-of-type(3) a {
     margin-bottom: 60px;
@@ -370,6 +381,7 @@ footer ul {
     row-gap: 10px;
     column-gap: 10px;
   }
+  /* ------------------------------------Footer------------------------------------ */
   footer ul {
     flex-wrap: wrap;
     row-gap: 40px;

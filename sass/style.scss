@@ -10,6 +10,8 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     background: rgba(128, 128, 128, 0.474);
     font-family: 'montserrat', Courier, monospace;
@@ -17,8 +19,12 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-  
 }
+
+
+
+/* ------------------------------------Barre de navigation------------------------------------ */
+
 
 nav {
     width: 100%;
@@ -37,6 +43,11 @@ nav {
     }
 }
 
+
+/* ------------------------------------Header------------------------------------ */
+
+
+
 header{
     width: 100%;
     text-align: center;
@@ -51,8 +62,6 @@ header{
         color: $main-color;
         margin-top: 10px;
     }
-
-
 }
 
 button{
@@ -66,7 +75,6 @@ button{
     padding: 10px 30px;
     margin: 40px 0;
 }
-
 
 .header-text{
     background: $main-color;
@@ -84,10 +92,13 @@ button{
     }
 }
 
+
+/* ------------------------------------Présentation du campus------------------------------------ */
+
+
 .icon-part{
     width: 100%;
 }
-
 
 
 .icon-part-container{
@@ -133,6 +144,8 @@ button{
    }
 }
 
+
+/* ------------------------------------News du campus------------------------------------ */
 
 
 .news-part{
@@ -211,6 +224,9 @@ button{
 }
 
 }
+     
+
+/* ------------------------------------Contact------------------------------------ */
 
 
 .contact{
@@ -321,6 +337,9 @@ button{
 }
 
 
+/* ------------------------------------Footer------------------------------------ */
+
+
 footer{
     background: $secondary-color;
     display: flex;
@@ -347,7 +366,39 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width :  900px){
+
+    
+/* ------------------------------------Barre de navigation------------------------------------ */
+
 
     nav{
 
@@ -360,6 +411,9 @@ footer{
           
         }
     }
+
+
+/* ------------------------------------Header------------------------------------ */
 
     header{
         .logo-campus{
@@ -380,6 +434,10 @@ footer{
     .list-icon-part button{
         width: 60%;
     }
+
+
+/* ------------------------------------News du campus------------------------------------ */
+
 
     .header-news{
         flex-direction: column;
@@ -432,6 +490,15 @@ footer{
     }
 
 
+/* ------------------------------------Contact------------------------------------ */
+
+
+    .contact .contact-list{
+    height: 100%;
+    flex-direction: column;
+    }
+
+
     .list{
         width: 100%;
         text-align: center;
@@ -448,11 +515,7 @@ footer{
         display: none;
     }
 
-    .contact .contact-list{
-        height: 100%;
-        flex-direction: column;
-    }
-
+    
     .list:nth-of-type(3) a{
         margin-bottom: 60px;
     }
@@ -461,18 +524,15 @@ footer{
         margin: 0 70px;
     }
 
-
     .contact-medias{
         flex-direction: column;
     }
-
 
     .contact-medias .medias-text {
         width: 100%;
         margin: 0;
         text-align: center;
     }
-
 
     .contact-medias .medias-logos{
         margin-top: 15px;
@@ -481,6 +541,9 @@ footer{
         row-gap: 10px;
         column-gap: 10px;
     }
+
+
+/* ------------------------------------Footer------------------------------------ */
 
 
     footer ul{
