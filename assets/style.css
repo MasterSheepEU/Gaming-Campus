@@ -366,6 +366,11 @@ footer ul {
   }
   .list-icon-part {
     width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .list-icon-part p {
+    width: 80%;
   }
   .list-icon-part button {
     width: 60%;
@@ -397,7 +402,7 @@ footer ul {
     align-items: center;
   }
   .main-news-container .mn-pic {
-    align-items: center;
+    text-align: center;
   }
   .main-news-container div {
     width: 80%;

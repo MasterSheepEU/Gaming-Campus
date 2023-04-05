@@ -233,7 +233,7 @@ button{
     padding-bottom: 100px;
 
     
-    .first-news{
+    div{
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -475,6 +475,12 @@ footer{
 
     .list-icon-part{
         width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        p{
+            width: 80%;
+        }
     }
 
     .list-icon-part button{
@@ -493,10 +499,6 @@ footer{
             animation: zoombutton-mobile 0.5s forwards;
         }
     }
-
-
-
-
 
 /* ------------------------------------News du campus------------------------------------ */
 
@@ -525,7 +527,7 @@ footer{
         align-items: center;
 
         .mn-pic{
-            align-items: center;
+            text-align: center;
         }
 
         div{
